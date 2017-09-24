@@ -8,16 +8,16 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo">
-      <img src="http://placehold.it/150x100" alt="" class="page-header__logo-img">
+    <div class="page-header__logo logo">
+      <img class="logo__img" src="http://placehold.it/150x100" alt="Картника логотипа">
     </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         Открыть меню
       </button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Каталог товаров</a>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link">Каталог товаров</a>
         </li>
         <li class="site-list__item">
           <a href="#" class="site-list__link">Вязание на заказ</a>
@@ -72,6 +72,36 @@
           </li>
         </ul>
       </header>
+    </section>
+    <section class="popular-product">
+      <h2 class="popular-product__title">
+        Вязаные корзинки
+      </h2>
+      <div class="popular-product__tag">Товар недели</div>
+      <p class="popular-product__desc">
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+      </p>
+      <table class="popular-product__info">
+        <tr class="popular-product__row">
+          <td class="popular-product__property">Цвет:</td>
+          <td class="popular-product__value">«Тиффани»/серый</td>
+        </tr>
+        <tr class="popular-product__row">
+          <td class="popular-product__property">Диаметр:</td>
+          <td class="popular-product__value">25см</td>
+        </tr>
+        <tr class="popular-product__row">
+          <td class="popular-product__property">Высота:</td>
+          <td class="popular-product__value">15см</td>
+        </tr>
+      </table>
+      <div class="popular-product__item">
+        <div class="popular-product__pic">
+          <img class="popular-product__img" src="http://placehold.it/150x100" alt="Картинка товара">
+        </div>
+        <div class="popular-product__price">Цена:990 руб.</div>
+        <a class="popular-product__btn btn" href="#">Заказать</a>
+      </div>
     </section>
   </main>
 </body>
