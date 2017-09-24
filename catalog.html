@@ -51,6 +51,9 @@
       </h1>
     </div>
     <section class="goods">
+      <h2 class="visually-hidden">
+      Товар
+      </h2>
       <div class="goods__list">
         <article class="goods__item card-product">
           <a class="card-product__link" href="detail.html">
@@ -143,6 +146,29 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
+  <div class="modal">
+    <h2 class="modal__title">
+      Добавить в корзину
+    </h2>
+    <p class="modal__text">
+      Выберите размер:
+    </p>
+    <form class="modal__sizes" method="post">
+      <div class="modal__sizes-item modal__sizes-item--active">
+        <input type="checkbox" id="s">
+        <label for="s">s</label>
+      </div>
+      <div class="modal__sizes-item">
+        <input type="checkbox" id="m">
+        <label for="m">m</label>
+      </div>
+      <div class="modal__sizes-item">
+        <input type="checkbox" id="l">
+        <label for="l">l</label>
+      </div>
+      <button class="modal__btn btn">LДобавить</button>
+    </form>
+  </div>
 </body>
 
 </html>
