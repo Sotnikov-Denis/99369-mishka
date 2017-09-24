@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__logo">
+      <img src="http://placehold.it/150x100" alt="" class="page-header__logo-img">
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        Открыть меню
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">Каталог товаров</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list search">
+        <li class="search__item">
+          <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" class="search__input">
+            <button class="search__submit" type="submit">Поиск</button>
+          </form>
+        </li>
+      </ul>
+      <ul class="main-nav__list basket">
+        <li class="basket__item">
+          <span class="basket__text">Корзина: пока пуста</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</body>
 
-  </body>
 </html>
