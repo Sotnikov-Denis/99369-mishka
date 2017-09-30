@@ -5,10 +5,11 @@
 .contacts {
   padding-top: 40px;
   padding-bottom: 40px;
-  outline: 2px solid black;
+
 }
 
 .contacts__title {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-weight: 800;
