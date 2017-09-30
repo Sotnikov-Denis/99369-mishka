@@ -1,0 +1,52 @@
+/*================================
+=            contacts            =
+================================*/
+
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  outline: 2px solid black;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.contacts__item {}
+
+.contacts__email {
+  color: #444444;
+  border-bottom:1px solid #62d1ba;
+}
+
+.contacts__item-property {
+  display: block;
+  margin-right: 30px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction:column;
+  margin-bottom: 40px;
+}
+.contacts__item {
+  display: flex;
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__map {
+    height: 475px;
+    background:url('../img/map-mobile@1x.jpg') no-repeat center center;
+    background-size:cover;
+    margin-bottom: 40px;
+}
+
+
+/*=====  End of contacts  ======*/
