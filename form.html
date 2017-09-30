@@ -3,49 +3,48 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,800&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo logo">
-      <img class="logo__img" src="http://placehold.it/150x100" alt="Картника логотипа">
-    </div>
+    <a class="logo" href="#">
+      <img class="logo__img" src="img/logo-mobile.svg" alt="Картинка логотипа">
+    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        Открыть меню
+      <button class="burger-menu" type="button">
+        <div class="burger-menu__wrapper">
+          <span class="burger-menu__span"></span>
+          <span class="burger-menu__span"></span>
+          <span class="burger-menu__span"></span>
+        </div>
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Каталог товаров</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list search">
-        <li class="search__item">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="search">
           <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" class="search__input">
+            <input type="text" class="search__input" placeholder="Поиск по сайту">
             <button class="search__submit" type="submit">Поиск</button>
           </form>
-        </li>
-      </ul>
-      <ul class="main-nav__list basket">
-        <li class="basket__item">
+        </div>
+        <div class="basket">
           <span class="basket__text">Корзина: пока пуста</span>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="page-main">
-    <div class="intro">
+    <div class="intro intro--gray intro--padding">
       <h1 class="intro__title">
         Вязание на заказ
       </h1>
@@ -56,15 +55,15 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback-form__field">
-          <div class="feedback-form__field-header">Тип</div>
+        <div class="feedback-form__group">
+          <div class="feedback-form__group-header">Тип</div>
           <input class="feedback-form__input" type="radio" id="radio-1" name="radio">
           <label class="feedback-form__label" for="radio-1">Аксессуар для интерьера</label>
           <input class="feedback-form__input" type="radio" id="radio-2" name="radio">
           <label class="feedback-form__label" for="radio-2">Детская игрушка</label>
         </div>
-        <div class="feedback-form__field">
-          <div class="feedback-form__field-header">Цвет</div>
+        <div class="feedback-form__group">
+          <div class="feedback-form__group-header">Цвет</div>
           <input class="feedback-form__input" type="checkbox" id="checkbox-1" name="checkbox">
           <label class="feedback-form__label" for="checkbox-1">Белый</label>
           <input class="feedback-form__input" type="checkbox" id="checkbox-2" name="checkbox">
@@ -78,22 +77,22 @@
           <input class="feedback-form__input" type="checkbox" id="checkbox-6" name="checkbox">
           <label class="feedback-form__label" for="checkbox-6">Оранжевый</label>
         </div>
-        <div class="feedback-form__field">
-          <div class="feedback-form__field-header">Фио</div>
-          <label class="feedback-form__label" for="name">Имя:</label>
+        <div class="feedback-form__group">
+          <div class="feedback-form__group-header">Фио</div>
+          <label class="feedback-form__label feedback-form__label--left" for="name">Имя:</label>
           <input class="feedback-form__input" required type="text" id="name" name="name" placeholder="Введите ваше имя*">
-          <label class="feedback-form__label" for="surname">Фамилия:</label>
+          <label class="feedback-form__label feedback-form__label--left" for="surname">Фамилия:</label>
           <input class="feedback-form__input" required type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
-          <label class="feedback-form__label" for="middlename">Отчество:</label>
+          <label class="feedback-form__label feedback-form__label--left" for="middlename">Отчество:</label>
           <input class="feedback-form__input" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
         </div>
-        <div class="feedback-form__field">
-          <div class="feedback-form__field-header feedback-form__field-header--lighter">Телефон</div>
+        <div class="feedback-form__group">
+          <div class="feedback-form__group-header feedback-form__field-header--lighter">Телефон</div>
           <input class="feedback-form__input feedback-form__input--phone" required type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*">
           <input class="feedback-form__input feedback-form__input--email" required type="email" name="email" placeholder="Ваш Email*">
         </div>
-        <div class="feedback-form__field">
-          <div class="feedback-form__field-header feedback-form__field-header--lighter">Доп</div>
+        <div class="feedback-form__group">
+          <div class="feedback-form__group-header feedback-form__field-header--lighter">Доп</div>
           <textarea class="feedback-form__area" name="area" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
         <div class="feedback-form__required">*Поля обязательны для заполнения</div>
@@ -102,7 +101,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social social">
+    <div class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--inst" href="#">Инстрагамм</a>
@@ -115,9 +114,11 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="html-academy">
+      </a>
     </div>
   </footer>
 </body>

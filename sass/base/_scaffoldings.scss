@@ -38,7 +38,8 @@ input:-ms-input-placeholder {
   color: #000;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   display: none;
 }
 
