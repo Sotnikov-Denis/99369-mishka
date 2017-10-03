@@ -1,6 +1,7 @@
 /*===========================
 =            btn            =
 ===========================*/
+
 .btn {
   display: block;
   width: 100%;
@@ -8,19 +9,19 @@
   font-size: 17px;
   line-height: 1;
   font-weight: 800;
-  text-transform:uppercase;
+  text-transform: uppercase;
   text-align: center;
-  color:#444444;
+  color: #444444;
   background: transparent;
-  border:2px solid #444444;
-  cursor:pointer;
+  border: 2px solid #444444;
+  cursor: pointer;
 
   &--fill {
-    background:#63d1bb;
-    border:2px solid transparent;
-    color:#fff;
+    background: #63d1bb;
+    border: 2px solid transparent;
+    color: #ffffff;
   }
-
 }
+
 
 /*=====  End of btn  ======*/
