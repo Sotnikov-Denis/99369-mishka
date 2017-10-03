@@ -3,13 +3,12 @@
 ==============================*/
 
 .slider {
-
   padding-top: 30px;
   padding-bottom: 40px;
 }
 
 .slider__title {
-  font-family: 'Open Sans Bold', 'Arial', sans-serif;
+  font-weight: 800;
   margin-bottom: 35px;
 }
 
@@ -19,12 +18,12 @@
   height: 50px;
   padding: 0;
   margin: 0;
-  text-indent:-9999px;
-  overflow:hidden;
-  background:transparent;
-  border:1px solid #ececec;
-  outline:none;
-  cursor:pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid #ececec;
+  outline: none;
+  cursor: pointer;
 
 
   &--prev {
@@ -34,7 +33,7 @@
 
 .slider__controls {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin-bottom: 35px;
 }
 

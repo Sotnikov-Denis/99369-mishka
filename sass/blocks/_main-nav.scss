@@ -8,7 +8,7 @@
   top: 100%;
   left: 0;
   right: 0;
-  background: #fff;
+  background: #ffffff;
 }
 
 .main-nav__list {
@@ -24,8 +24,8 @@
   border-bottom: 1px solid #ececec;
 
   &:last-child {
-    margin-bottom:0;
-    border-bottom:0;
+    margin-bottom: 0;
+    border-bottom: 0;
   }
 }
 
@@ -38,8 +38,5 @@
   color: #000;
   text-decoration: none;
 }
-
-
-
 
 /*=====  End of main-nav  ======*/

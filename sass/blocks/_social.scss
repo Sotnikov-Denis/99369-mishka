@@ -1,12 +1,14 @@
 /*==============================
 =            social            =
 ==============================*/
+
 .social {
   display: block;
   padding-top: 25px;
   padding-bottom: 30px;
-  border-bottom:2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
 }
+
 .social__link {
   display: block;
   text-indent: 100%;
@@ -17,17 +19,15 @@
 
 .social__list {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   max-width: 145px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .social__link {
   width: 22px;
   height: 20px;
-  outline:1px solid black;
+  outline: 1px solid black;
 }
-
-
 
 /*=====  End of social  ======*/
