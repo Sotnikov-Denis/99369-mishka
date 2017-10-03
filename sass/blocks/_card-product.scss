@@ -17,15 +17,19 @@
   text-align: center;
 }
 
+
+
+
+
 .card-product__content {
   padding: 30px;
   max-width: 260px;
 }
 
 .card-product__title-link {
+  font-family: 'Open Sans Bold', 'Arial', sans-serif;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 800;
   margin-bottom: 20px;
   color: #000;
 }
@@ -43,6 +47,12 @@
   padding-top: 30px;
 }
 
+.card-product__price {
+  font-family: 'Open Sans Bold', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .card-product__basket {
   display: block;
   width: 18px;
@@ -53,9 +63,11 @@
   border: none;
   outline: none;
   background: transparent;
-  cursor:pointer;
-  outline:1px solid black;
+  cursor: pointer;
+  outline: 1px solid black;
 }
+
+
 
 
 

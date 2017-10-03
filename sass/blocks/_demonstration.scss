@@ -1,21 +1,22 @@
 /*=====================================
 =            demonstration            =
 =====================================*/
+
 .demonstration {
   padding-top: 30px;
-  border:1px solid #ececec;
+  border: 1px solid #ececec;
   margin-bottom: 60px;
 }
 
 .demonstration__title {
   position: relative;
   padding-left: 60px;
+  font-family: 'Open Sans Bold', 'Arial', sans-serif;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 800;
-  color:#000;
-  max-width:130px;
-  margin:0 auto;
+  color: #000;
+  max-width: 130px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -27,10 +28,13 @@
 .demonstration__desc {
   font-size: 13px;
   line-height: 24px;
-  max-width:180px;
+  max-width: 180px;
   margin-bottom: 50px;
 }
+
 .demonstration__content {
- padding:30px;
+  padding: 30px;
 }
+
+
 /*=====  End of demonstration  ======*/
