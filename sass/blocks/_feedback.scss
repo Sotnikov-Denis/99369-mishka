@@ -32,7 +32,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 0;
@@ -79,7 +79,7 @@
   }
 
   &--circle::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 50%;
@@ -92,7 +92,7 @@
   }
 
   &--square::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 50%;
@@ -185,6 +185,7 @@
   line-height: 1;
   margin-bottom: 30px;
 }
+
 
 
 /*=====  End of feedback  ======*/
