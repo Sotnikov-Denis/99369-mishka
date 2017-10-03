@@ -11,7 +11,7 @@
 
 <body>
   <header class="page-header">
-    <a class="logo" href="#">
+    <a class="logo" href="./">
       <img class="logo__img" src="img/logo-mobile.svg" alt="Картинка логотипа">
     </a>
     <nav class="main-nav">
@@ -56,29 +56,29 @@
       </p>
       <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form__group">
-          <div class="feedback-form__group-header">Тип</div>
+          <div class="feedback-form__header"><span>Тип</span></div>
           <input class="feedback-form__input" type="radio" id="radio-1" name="radio">
-          <label class="feedback-form__label" for="radio-1">Аксессуар для интерьера</label>
+          <label class="feedback-form__label feedback-form__label--circle" for="radio-1">Аксессуар для интерьера</label>
           <input class="feedback-form__input" type="radio" id="radio-2" name="radio">
-          <label class="feedback-form__label" for="radio-2">Детская игрушка</label>
+          <label class="feedback-form__label feedback-form__label--circle" for="radio-2">Детская игрушка</label>
         </div>
         <div class="feedback-form__group">
-          <div class="feedback-form__group-header">Цвет</div>
+          <div class="feedback-form__header feedback-form__header--margin"><span>Цвет</span></div>
           <input class="feedback-form__input" type="checkbox" id="checkbox-1" name="checkbox">
-          <label class="feedback-form__label" for="checkbox-1">Белый</label>
+          <label class="feedback-form__label feedback-form__label--margin feedback-form__label--square" for="checkbox-1">Белый</label>
           <input class="feedback-form__input" type="checkbox" id="checkbox-2" name="checkbox">
-          <label class="feedback-form__label" for="checkbox-2">Серый</label>
+          <label class="feedback-form__label feedback-form__label--margin feedback-form__label--square" for="checkbox-2">Серый</label>
           <input class="feedback-form__input" type="checkbox" id="checkbox-3" name="checkbox">
-          <label class="feedback-form__label" for="checkbox-3">"Тиффани"</label>
+          <label class="feedback-form__label feedback-form__label--margin feedback-form__label--square" for="checkbox-3">"Тиффани"</label>
           <input class="feedback-form__input" type="checkbox" id="checkbox-4" name="checkbox">
-          <label class="feedback-form__label" for="checkbox-4">Черный</label>
+          <label class="feedback-form__label feedback-form__label--margin feedback-form__label--square" for="checkbox-4">Черный</label>
           <input class="feedback-form__input" type="checkbox" id="checkbox-5" name="checkbox">
-          <label class="feedback-form__label" for="checkbox-5">Розовый</label>
+          <label class="feedback-form__label feedback-form__label--margin feedback-form__label--square" for="checkbox-5">Розовый</label>
           <input class="feedback-form__input" type="checkbox" id="checkbox-6" name="checkbox">
-          <label class="feedback-form__label" for="checkbox-6">Оранжевый</label>
+          <label class="feedback-form__label feedback-form__label--margin feedback-form__label--square" for="checkbox-6">Оранжевый</label>
         </div>
         <div class="feedback-form__group">
-          <div class="feedback-form__group-header">Фио</div>
+          <div class="feedback-form__header"><span>Фио</span></div>
           <label class="feedback-form__label feedback-form__label--left" for="name">Имя:</label>
           <input class="feedback-form__input" required type="text" id="name" name="name" placeholder="Введите ваше имя*">
           <label class="feedback-form__label feedback-form__label--left" for="surname">Фамилия:</label>
@@ -87,12 +87,15 @@
           <input class="feedback-form__input" type="text" id="middlename" name="middlename" placeholder="Отчество, если желаете">
         </div>
         <div class="feedback-form__group">
-          <div class="feedback-form__group-header feedback-form__field-header--lighter">Телефон</div>
+          <div class="feedback-form__header"><span>Тел</span></div>
           <input class="feedback-form__input feedback-form__input--phone" required type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*">
+        </div>
+        <div class="feedback-form__group">
+          <div class="feedback-form__header"><span>Email</span></div>
           <input class="feedback-form__input feedback-form__input--email" required type="email" name="email" placeholder="Ваш Email*">
         </div>
         <div class="feedback-form__group">
-          <div class="feedback-form__group-header feedback-form__field-header--lighter">Доп</div>
+          <div class="feedback-form__header"><span>Доп</span></div>
           <textarea class="feedback-form__area" name="area" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
         <div class="feedback-form__required">*Поля обязательны для заполнения</div>
