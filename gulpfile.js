@@ -5,10 +5,12 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var sassglob = require("gulp-sass-glob");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
+    .pipe(sassglob())
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([

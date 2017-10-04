@@ -1,0 +1,30 @@
+/*==============================
+=            social            =
+==============================*/
+
+.social {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.social__link {
+  display: block;
+  width: 22px;
+  height: 20px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: 1px solid black;
+}
+
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 145px;
+  margin: 0 auto;
+}
+
+/*=====  End of social  ======*/

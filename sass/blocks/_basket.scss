@@ -1,0 +1,23 @@
+/*==============================
+=            basket            =
+==============================*/
+
+.basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27px 31px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.basket__text {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+}
+
+
+/*=====  End of basket  ======*/

@@ -1,0 +1,64 @@
+/*=============================
+=            modal            =
+=============================*/
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 35px;
+  width: 100%;
+  border: 1px solid #c7c7c7;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 160px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.modal__text {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.modal__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.modal__item {
+  &--active .modal__label {
+    border: 1px solid #63d1bb;
+  }
+}
+
+.modal__label {
+  display: block;
+  position: relative;
+  padding-top: 19px;
+  padding-right: 35px;
+  padding-bottom: 18px;
+  padding-left: 35px;
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 1px solid #ececec;
+  cursor: pointer;
+}
+
+
+/*=====  End of modal  ======*/

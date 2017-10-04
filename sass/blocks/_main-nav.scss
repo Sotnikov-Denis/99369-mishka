@@ -1,0 +1,43 @@
+/*================================
+=            main-nav            =
+================================*/
+
+.main-nav__wrapper {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.main-nav__item {
+  margin-bottom: -1px;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 27px 31px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/*=====  End of main-nav  ======*/

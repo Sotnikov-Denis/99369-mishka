@@ -3,45 +3,43 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo logo">
-      <img class="logo__img" src="http://placehold.it/150x100" alt="Картника логотипа">
+    <div class="logo">
+      <img class="logo__img" src="img/logo-mobile.svg" alt="Картинка логотипа">
     </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        Открыть меню
+      <button class="burger-menu" type="button">
+        <div class="burger-menu__wrapper">
+          <span class="burger-menu__span"></span>
+          <span class="burger-menu__span"></span>
+          <span class="burger-menu__span"></span>
+        </div>
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Вязание на заказ</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Каталог товаров</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list search">
-        <li class="search__item">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="search">
           <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" class="search__input">
+            <input type="text" class="search__input" placeholder="Поиск по сайту">
             <button class="search__submit" type="submit">Поиск</button>
           </form>
-        </li>
-      </ul>
-      <ul class="main-nav__list basket">
-        <li class="basket__item">
+        </div>
+        <div class="basket">
           <span class="basket__text">Корзина: пока пуста</span>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -63,7 +61,7 @@
               </span>
             </a>
           </li>
-          <li class="site-sections__item">
+          <li class="site-sections__item site-sections__item--darken">
             <a href="#" class="site-sections__link">
               <span class="site-sections__title">
                 Детские игрушки
@@ -97,10 +95,10 @@
       </table>
       <div class="popular-product__item">
         <div class="popular-product__pic">
-          <img class="popular-product__img" src="http://placehold.it/150x100" alt="Картинка товара">
+          <img class="popular-product__img" src="img/triple-set-mobile@1x.jpg" alt="Картинка товара">
         </div>
         <div class="popular-product__price">Цена:990 руб.</div>
-        <a class="popular-product__btn btn" href="#">Заказать</a>
+        <a class="btn" href="#">Заказать</a>
       </div>
     </section>
     <section class="advantages">
@@ -116,36 +114,28 @@
         <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
-    <section class="reviews">
-      <h2 class="reviews__title">
+    <section class="slider">
+      <h2 class="slider__title">
         Отзывы
       </h2>
-      <div class="reviews__wrapper slider">
-        <div class="reviews__list slider__list">
-          <div class="reviews__item slider__item">
-            <p class="reviews__text">
+      <div class="slider__wrapper">
+        <div class="slider__list">
+          <div class="review-item">
+            <p class="review-item__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
-            <div class="reviews__author">
-              <div class="reviews__author-name"><strong>Анастасия Красильникова</strong></div>
-              <a class="reviews__author-link" href="#">@misssssiskras</a>
-            </div>
-          </div>
-          <div class="reviews__item slider__item">
-            <p class="reviews__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus natus in dolorum repellendus placeat animi, fuga eius consequuntur, nisi accusamus modi architecto a non, expedita suscipit impedit ipsam earum, veniam?
-            </p>
-            <div class="reviews__author">
-              <div class="reviews__author-name"><strong>Иван Пупкин</strong></div>
-              <a class="reviews__author-link" href="#">@ivanpupkin</a>
+            <div class="review-item__author">
+              <div class="review-item__author-name"><strong>Анастасия Красильникова</strong></div>
+              <a class="review-item__author-link" href="#">@misssssiskras</a>
             </div>
           </div>
         </div>
         <p class="slider__controls">
-          <button class="slider__arrow slider__arrow--prev">Предыдущий</button>
+          <button class="slider__arrow slider__arrow--prev">Предыдущий
+          </button>
           <button class="slider__arrow slider__arrow--next">Следыдущий</button>
         </p>
-        <a class="reviews__button btn" href="reviews.html">
+        <a class="btn" href="reviews.html">
           Написать
         </a>
       </div>
@@ -173,7 +163,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social social">
+    <div class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--inst" href="#">Инстрагамм</a>
@@ -186,9 +176,11 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo" src="img/logo-htmlacademy.svg" alt="html-academy">
+      </a>
     </div>
   </footer>
   <div class="modal">
@@ -199,21 +191,24 @@
       Выберите размер:
     </p>
     <form class="modal__sizes" method="post">
-      <div class="modal__sizes-item modal__sizes-item--active">
-        <input type="checkbox" id="s">
-        <label for="s">s</label>
+      <div class="modal__wrapper">
+        <div class="modal__item modal__item--active">
+          <input class="modal__input" type="checkbox" id="s">
+          <label class="modal__label" for="s">s</label>
+        </div>
+        <div class="modal__item">
+          <input class="modal__input" type="checkbox" id="m">
+          <label class="modal__label" for="m">m</label>
+        </div>
+        <div class="modal__item">
+          <input class="modal__input" type="checkbox" id="l">
+          <label class="modal__label" for="l">l</label>
+        </div>
       </div>
-      <div class="modal__sizes-item">
-        <input type="checkbox" id="m">
-        <label for="m">m</label>
-      </div>
-      <div class="modal__sizes-item">
-        <input type="checkbox" id="l">
-        <label for="l">l</label>
-      </div>
-      <button class="modal__btn btn">LДобавить</button>
+      <button class="btn btn--fill">Добавить</button>
     </form>
   </div>
+  <div class="overlay"></div>
 </body>
 
 </html>

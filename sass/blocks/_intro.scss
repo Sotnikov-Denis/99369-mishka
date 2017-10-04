@@ -1,0 +1,31 @@
+/*=============================
+=            intro            =
+=============================*/
+
+.intro {
+  padding-top: 75px;
+  padding-bottom: 120px;
+  background: #fafafa url("../img/hero-mobile@1x.jpg") no-repeat center 0;
+  background-size: cover;
+
+  &--gray {
+    background: #f1f1f1;
+  }
+
+  &--padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.intro__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 800;
+  max-width: 260px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/*=====  End of intro  ======*/

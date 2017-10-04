@@ -1,0 +1,66 @@
+/*====================================
+=            card-product            =
+====================================*/
+
+.card-product__item {
+  border: 1px solid #ededed;
+  margin-bottom: 30px;
+
+  &:first-child {
+    margin-top: 30px;
+  }
+}
+
+.card-product__link {
+  display: block;
+  height: 200px;
+  text-align: center;
+}
+
+.card-product__content {
+  padding: 30px;
+  max-width: 260px;
+}
+
+.card-product__title-link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.card-product__params {
+  font-size: 13px;
+  line-height: 30px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #ededed;
+}
+
+.card-product__action {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.card-product__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.card-product__basket {
+  display: block;
+  width: 18px;
+  height: 18px;
+  text-indent: -999px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: 1px solid black;
+}
+
+
+/*=====  End of card-product  ======*/

@@ -1,0 +1,31 @@
+/*==================================
+=            advantages            =
+==================================*/
+
+.advantages {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.advantages__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+
+.advantages__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 800;
+  padding-top: 60px;
+  margin-bottom: 30px;
+  max-width: 200px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/*=====  End of advantages  ======*/
